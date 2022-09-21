@@ -16,7 +16,7 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Setup
-> git clone git@github.com:christianbiring1/portfolio-mobile-version.git
+> git clone git@github.com:SekoViper/portfolio.git
 > cd portfolio-mobile-version
 
 
