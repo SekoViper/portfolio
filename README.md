@@ -2,7 +2,9 @@
 
 # Personal Potfolio
 
-> This project is about Dameh Seko as a web developer. I am very passoinate about software. Get in touch with me through any of my handles listed below and i will be of help. See the technologies i can use below. 
+> Setup a new repository ready for deployment using best practices (linters) 
+> Used a figma template for this project provided by Microverse for the project
+> You can find the link to the figma file here (https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=39%3A122)
 
 ## Built With
 
@@ -11,26 +13,11 @@
 - Microverse linters
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+> git clone git@github.com:christianbiring1/portfolio-mobile-version.git
+> cd portfolio-mobile-version
 
 
 ## Author
