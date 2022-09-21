@@ -2,8 +2,7 @@
 
 # Personal Potfolio
 
-> This project is about Dameh Seko as a web developer. 
-
+> This project is about Dameh Seko as a web developer. I am very passoinate about software. Get in touch with me through any of my handles listed below and i will be of help. See the technologies i can use below. 
 
 ## Built With
 
@@ -38,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/SekoViper/Hello-Microverse/blob/main/.gitignore.txt)
+- GitHub: [@githubhandle](https://github.com/SekoViper)
 - Twitter: [@twitterhandle](https://twitter.com/SekoViper)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/livingstone-dameh/)
 

@@ -89,6 +89,8 @@ p {
     height: 90vh;
     border-bottom-left-radius: 20%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
   }
 
   .content-container {
@@ -103,13 +105,19 @@ p {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
+    text-decoration: none;
   }
 
   .social-icon {
     margin: 0 24px;
   }
 
-  .social-icon > a {
+  .social-icon li {
+    list-style-type: none;
     margin: 0 19px 0 0;
+  }
+
+  .social-icon ul {
+    display: flex;
   }
 }
