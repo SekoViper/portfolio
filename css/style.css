@@ -245,7 +245,7 @@ p {
     list-style-type: none;
   }
 
-  .skills-item{
+  .skills-item {
     display: flex;
     justify-content: space-between;
     width: 327px;
