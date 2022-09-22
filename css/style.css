@@ -237,12 +237,19 @@ p {
     padding: 12px 24px 0 26px;
   }
 
-  summary ::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: uppercase;
-    text-indent: 0px !important;
-    text-align: end !important;
-    text-align-last: end !important;
-}
+  .skils {
+    margin-top: 24px;
+  }
+
+  .skills-items {
+    list-style-type: none;
+  }
+
+  .skills-item{
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    height: 72px;
+    align-items: center;
+  }
 }
