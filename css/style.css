@@ -125,7 +125,7 @@ p {
     background-color: #fff;
     padding: 16px;
     margin: 114px 24px 0 24px;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
   }
 
@@ -141,7 +141,7 @@ p {
     align-items: center;
     margin: 20px 20px 20px 0;
   }
-  
+
   .work-item {
     grid-row: 1;
   }
