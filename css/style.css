@@ -185,7 +185,7 @@ p {
     border: none;
     background-color: var(--simple-color);
   }
- 
+  
   .btn:hover {
     background-color: var(--primary-color);
     color: #fff;
