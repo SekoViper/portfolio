@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+:root {
+  --primary-color: #6070ff;
+  --secondary-color: #344563;
+  --third-color: #396df2;
+  --abstract-color: #172b4d;
+  --simple-color: #ebebff;
+  --neutral-color: #7a869a;
+  --normal-color: #000;
+  --general-color: #f7f7f9;
+  --sample-color: #7f8cff;
+}
+
+body {
+  background-color: var(--general-color);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--abstract-color);
+  font-weight: bold;
+  line-height: 52px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--abstract-color);
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--normal-color);
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* mobile view */
+@media only screen and (max-width: 750px) {
+  .logo {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  nav {
+    padding: 14px 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggler {
+    display: initial;
+    margin: 0 24px;
+  }
+
+  .toggler > div {
+    border-radius: 15%;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .hero-container {
+    background-image: url(/img/header-shapes\ mobile.png);
+    height: 90vh;
+    border-bottom-left-radius: 20%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-container {
+    margin: 0 24px;
+    padding: 114px 0 12px 0;
+  }
+
+  .connect {
+    color: var(--sample-color);
+    padding: 12px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .social-icon {
+    margin: 0 24px;
+  }
+
+  .social-icon li {
+    list-style-type: none;
+    margin: 0 19px 0 0;
+  }
+
+  .social-icon ul {
+    display: flex;
+  }
+}
