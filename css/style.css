@@ -245,7 +245,6 @@ p {
   }
 
   .collapsible {
-    /* background: #fff; */
     border-radius: 8px;
     width: 100%;
     height: 72px;
@@ -254,7 +253,7 @@ p {
   }
 
   .skils {
-    margin-top: 24px;
+    margin: 24px 0;
   }
 
   .skills-items {
@@ -262,10 +261,31 @@ p {
   }
 
   .skills-item {
-    display: flex;
-    justify-content: space-between;
     width: 327px;
     height: 72px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  .lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+
+  .item {
+    width: 327px;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    background-color: var(--general-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin: -5px;
+  }
+  hr {
+    color: #7a869a;
   }
 }
