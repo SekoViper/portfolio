@@ -126,6 +126,8 @@ p {
   }
 
   .work-container {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 16px;
     margin: 114px 24px 0 24px;
