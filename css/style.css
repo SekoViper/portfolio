@@ -185,6 +185,22 @@ p {
     border: none;
     background-color: var(--simple-color);
   }
+  .btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+border-radius: 8px;
+  }
+
+  .btn:active {
+    background-color: #2230d2;
+    color: #fff;
+
+  }
+
+  .btn-disabled {
+    border: 1px solid #C1C7D0;
+  }
 
   .btn-primary {
     border: 1px solid var(--primary-color);
