@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: var(--secondary-color);
 }
@@ -185,7 +185,7 @@ p {
     border: none;
     background-color: var(--simple-color);
   }
-  
+
   .btn:hover {
     background-color: var(--primary-color);
     color: #fff;
