@@ -120,4 +120,76 @@ p {
   .social-icon ul {
     display: flex;
   }
+
+  .work-container {
+    background-color: #fff;
+    padding: 16px;
+    margin: 114px 24px 0 24px;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+  }
+
+  .work-content {
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }
+
+  .work {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 20px 20px 0;
+  }
+  
+  .work-item {
+    grid-row: 1;
+  }
+
+  .works-title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+  }
+
+  .work-role {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--neutral-color);
+  }
+
+  .work-year {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--neutral-color);
+  }
+
+  .btn {
+    padding: 12px;
+    color: var(--primary-color);
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--simple-color);
+  }
+
+  .btn-primary {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .btn-secondary {
+    padding: 4px 12px;
+  }
+
+  .techs {
+    margin: 15px 24px 24px 0;
+  }
 }
