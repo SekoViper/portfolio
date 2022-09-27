@@ -181,7 +181,7 @@ p {
   .btn {
     padding: 12px;
     color: var(--primary-color);
-    font-size: 12px;
+    font-size: 17px;
     line-height: 16px;
     border-radius: 8px;
     border: none;
@@ -290,5 +290,61 @@ p {
 
   hr {
     color: #7a869a;
+  }
+
+  .contact-container {
+    background-color: var(--primary-color);
+    background-image: url(/img/contact_form_bg.png);
+    background-repeat: no-repeat;
+    padding: 102px 24px 0 24px;
+    border-top-left-radius: 100px;
+    margin: 114px 0 24px 0;
+    background-size: 70vw;
+    right: 80px;
+    background-position-x: right;
+  }
+
+  .contact-decs {
+    text-align: center;
+  }
+
+  .contact-decs h2 {
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-decs p {
+    color: var(--simple-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 24px;
+  }
+
+  form fieldset {
+    border: none;
+  }
+
+  .contact-form input {
+    width: 92%;
+    padding: 15px 16px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form textarea {
+    width: 92%;
+    border-radius: 8px;
+    padding: 15px 16px;
+  }
+
+  input[type="submit"] {
+    width: 140px;
+    margin-top: 20px;
   }
 }
