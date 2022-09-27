@@ -181,7 +181,7 @@ p {
   .btn {
     padding: 12px;
     color: var(--primary-color);
-    font-size: 12px;
+    font-size: 17px;
     line-height: 16px;
     border-radius: 8px;
     border: none;
@@ -322,5 +322,29 @@ p {
     font-size: 20px;
     line-height: 28px;
     padding: 24px;
+  }
+
+  form fieldset {
+    border: none;
+  }
+
+  .contact-form input {
+    width: 92%;
+    padding: 15px 16px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form textarea {
+    width: 92%;
+    border-radius: 8px;
+    padding: 15px 16px;
+  }
+
+  input[type="submit"] {
+    width: 140px;
+    margin-top: 20px;
   }
 }
