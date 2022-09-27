@@ -291,4 +291,36 @@ p {
   hr {
     color: #7a869a;
   }
+
+  .contact-container {
+    background-color: var(--primary-color);
+    background-image: url(/img/contact_form_bg.png);
+    background-repeat: no-repeat;
+    padding: 102px 24px 0 24px;
+    border-top-left-radius: 100px;
+    margin: 114px 0 24px 0;
+    background-size: 70vw;
+    right: 80px;
+    background-position-x: right;
+  }
+
+  .contact-decs {
+    text-align: center;
+  }
+
+  .contact-decs h2 {
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-decs p {
+    color: var(--simple-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 24px;
+  }
 }
