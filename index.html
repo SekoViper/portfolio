@@ -308,7 +308,7 @@
               id="fs-frm"
               name="simple-contact-form"
               accept-charset="utf-8"
-              action="https://formspree.io/f/{{form-id}}"
+              action="https://formspree.io/f/mdojgyyj"
               method="post"
             >
               <fieldset id="fs-frm-inputs">
@@ -318,6 +318,7 @@
                   id="full-name"
                   required=""
                   placeholder="Seko"
+                  maxlength="30"
                 />
 
                 <input
@@ -326,6 +327,7 @@
                   id="email-address"
                   required=""
                   placeholder="sekodameh@gmail.com"
+                  maxlength="30"
                 />
 
                 <textarea
@@ -334,12 +336,14 @@
                   id="message"
                   placeholder="Write your message"
                   required=""
+                  maxlength="500"
                 ></textarea>
                 <input
                   type="hidden"
                   name="_subject"
                   id="email-subject"
                   value="Contact Form Submission"
+                  maxlength="30"
                 />
               </fieldset>
               <input class="btn" type="submit" value="Get in touch" />
