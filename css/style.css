@@ -49,6 +49,10 @@ nav {
   height: 72px;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 .menu-items {
   display: flex;
   gap: 24px;
@@ -99,7 +103,7 @@ p {
   text-decoration: none;
 }
 
-.content-container p{
+.content-container p {
   padding: 20px 230px 24px 0;
 }
 
@@ -115,7 +119,6 @@ p {
 .social-icon ul {
   display: flex;
 }
-
 
 /* mobile view */
 @media only screen and (max-width: 768px) {
