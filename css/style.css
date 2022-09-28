@@ -76,10 +76,12 @@ p {
   .menu-items li {
     list-style-type: none;
   }
+
   .menu-items a {
     text-decoration: none;
     list-style-type: none;
   }
+
   .hero-section {
     background-image: url(/img/Header_bg.png);
     border-bottom-left-radius: 100px;
