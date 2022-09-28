@@ -54,7 +54,7 @@ p {
 }
 
 /* mobile view */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   .logo {
     font-size: 18px;
     color: var(--primary-color);
@@ -346,5 +346,11 @@ p {
   input[type="submit"] {
     width: 140px;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    
   }
 }
