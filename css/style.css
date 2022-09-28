@@ -40,6 +40,28 @@ h2 {
   color: var(--abstract-color);
 }
 
+nav {
+  padding: 0 142px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.menu-items {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-items li {
+  list-style-type: none;
+}
+.menu-items a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 h3 {
   font-style: normal;
   font-weight: 500;
@@ -346,11 +368,5 @@ p {
   input[type="submit"] {
     width: 140px;
     margin-top: 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    
   }
 }
