@@ -125,7 +125,7 @@ p {
 
   .works-section {
     display: grid;
-    margin: 142px;
+    margin: 0 142px 142px 142px;
   }
 
   .work-container > div {
