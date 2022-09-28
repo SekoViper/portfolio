@@ -27,7 +27,7 @@ html {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.8rem;
   color: var(--abstract-color);
   font-weight: bold;
   line-height: 52px;
@@ -74,6 +74,48 @@ p {
   font-size: 16px;
   line-height: 24px;
 }
+
+.hero-section {
+  background-image: url(/img/Header_bg.png);
+  border-bottom-left-radius: 100px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.hero-container {
+  padding: 200px 142px;
+  display: flex;
+  flex-direction: column;
+}
+
+.connect {
+  color: var(--sample-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.content-container p{
+  padding: 20px 230px 24px 0;
+}
+
+.social-icon {
+  margin: 24px 24px 24px 0;
+}
+
+.social-icon li {
+  list-style-type: none;
+  margin: 0 19px 0 0;
+}
+
+.social-icon ul {
+  display: flex;
+}
+
 
 /* mobile view */
 @media only screen and (max-width: 768px) {
