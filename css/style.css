@@ -82,6 +82,11 @@ p {
     list-style-type: none;
   }
 
+  .img-hover-effect:hover {
+    transform: scale(1.1);
+    transition: .9s;
+  }
+
   .hero-section {
     background-image: url(/img/Header_bg.png);
     border-bottom-left-radius: 100px;
@@ -198,6 +203,7 @@ p {
     border-radius: 8px;
     border: none;
     background-color: var(--simple-color);
+    transition: 0.4s;
   }
 
   .btn:hover {
