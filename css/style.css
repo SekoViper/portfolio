@@ -320,8 +320,11 @@ p {
     border-top-left-radius: 100px;
     background-size: contain;
     background-position: center;
-    top: -60px;
     position: relative;
+  }
+
+  #about-contact-container {
+    background-color: #fff;
   }
 
   .contact-decs {
