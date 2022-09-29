@@ -82,6 +82,31 @@ p {
     list-style-type: none;
   }
 
+  /* animation */
+  .img-hover-effect:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+  }
+
+  .animation-p:hover {
+    transform: translate(20px);
+    transition: 0.9s;
+  }
+
+  .logo-rotate {
+    animation: logo-animation 0.9s 1 linear;
+  }
+
+  @keyframes logo-animation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
   .hero-section {
     background-image: url(/img/Header_bg.png);
     border-bottom-left-radius: 100px;
@@ -198,6 +223,7 @@ p {
     border-radius: 8px;
     border: none;
     background-color: var(--simple-color);
+    transition: 0.4s;
   }
 
   .btn:hover {
