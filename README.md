@@ -10,14 +10,19 @@
 
 - HTML
 - CSS
-- Microverse linters
+- linters
+
+## Live Demo
+
+- https://sekoviper.github.io/portfolio/
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Setup
+> Open git bash
 > git clone git@github.com:SekoViper/portfolio.git
-> cd portfolio-mobile-version
+> cd portfolio
 
 
 ## Author
