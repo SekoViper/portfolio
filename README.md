@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-- https://sekoviper.github.io/portfolio/
+- https://sekoviper.github.io/portfolio
 
 
 To get a local copy up and running follow these simple example steps.
@@ -47,4 +47,3 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
