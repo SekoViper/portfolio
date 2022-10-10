@@ -10,5 +10,6 @@ toggler.addEventListener("click", () => {
 for(let link of linkItem){
   link.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
+    toggler.classList.toggle("active");
   })
 }
