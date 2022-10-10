@@ -446,7 +446,7 @@ p {
     color: #fff;
   }
 
-  .active {
+  .show-menu {
     left: 0;
     width: 100vw;
   }
@@ -457,10 +457,6 @@ p {
     position: absolute;
     z-index: 99;
     left: 80%;
-  }
-
-  .active.bar {
-    z-index: 99;
   }
 
   .bar {
