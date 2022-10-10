@@ -452,11 +452,12 @@ p {
   }
 
   .toggler {
-    display: initial;
+    /* display: initial; */
     margin: 0 24px;
     position: absolute;
     z-index: 99;
     left: 80%;
+    top:10px
   }
 
   .bar {
