@@ -64,6 +64,11 @@ p {
     height: 72px;
   }
 
+  header {
+    position: fixed;
+    width: 100vw;
+  }
+
   nav a {
     text-decoration: none;
   }
@@ -112,8 +117,9 @@ p {
     border-bottom-left-radius: 100px;
     background-color: #fff;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100vh;
+    z-index: 1;
   }
 
   .hero-container {
@@ -346,7 +352,6 @@ p {
     border-top-left-radius: 100px;
     background-size: contain;
     background-position: center;
-    position: relative;
   }
 
   #about-contact-container {
@@ -421,20 +426,69 @@ p {
   }
 
   .menu-items {
-    display: none;
+    height: 90vh;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    gap: 25px;
+    flex-direction: column;
+    background-color: rgb(96 112 255 / 0.9);
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease-in-out;
+    padding-left: 20px;
+    padding-top: 60px;
+  }
+
+  .menu-items li {
+    list-style-type: none;
+    padding-top: 20px;
+  }
+
+  .menu-items li a {
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .show-menu {
+    left: 0;
+    width: 100vw;
   }
 
   .toggler {
-    display: initial;
+    /* display: initial; */
     margin: 0 24px;
+    position: absolute;
+    z-index: 99;
+    left: 80%;
+    top: 10px;
   }
 
-  .toggler > div {
+  .bar {
     border-radius: 15%;
     background-color: var(--primary-color);
     height: 3px;
     width: 30px;
     margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .active .bar:nth-child(1) {
+    top: 14px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg) translateY(4px);
+  }
+
+  .active .bar:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+
+  .active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6.5px, -12px);
+    top: 14px;
+    background-color: rgb(255, 255, 255);
   }
 
   .hero-container {
