@@ -1,15 +1,15 @@
-const toggler = document.querySelector(".toggler");
-const navMenu = document.querySelector(".menu-items");
-const linkItem = document.querySelectorAll(".menu-links");
+const toggler = document.querySelector('.toggler');
+const navMenu = document.querySelector('.menu-items');
+const linkItem = document.querySelectorAll('.menu-links');
 
-toggler.addEventListener("click", () => {
-  toggler.classList.toggle("active");
-  navMenu.classList.toggle("show-menu");
-})
+toggler.addEventListener('click', () => {
+  toggler.classList.toggle('active');
+  navMenu.classList.toggle('show-menu');
+});
 
-for(let link of linkItem){
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-    toggler.classList.toggle("active");
-  })
+for (let link of linkItem) {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+    toggler.classList.toggle('active');
+  });
 }
