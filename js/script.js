@@ -7,7 +7,7 @@ toggler.addEventListener('click', () => {
   navMenu.classList.toggle('show-menu');
 });
 
-for(let i = 0; i < linkItems.length; i++){
+for (let i = 0; i < linkItems.length; i += 1) {
   linkItems[i].addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
     toggler.classList.toggle('active');
