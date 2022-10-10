@@ -68,8 +68,6 @@ p {
     text-decoration: none;
   }
 
-  
-
   .menu-items {
     display: flex;
     gap: 24px;
@@ -422,14 +420,12 @@ p {
     justify-content: space-between;
     align-items: center;
   }
-  .menu{
-    /* position: relative; */
-  }
+ 
   .menu-items {
     height: 90vh;
     position: absolute;
     left: -100%;
-    top:0px;
+    top: 0px;
     gap: 25px;
     flex-direction: column;
     background-color: rgb(96 112 255 / 0.9);
@@ -487,7 +483,7 @@ p {
     opacity: 0;
     left: -60px;
   }
-  
+
   .active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(6.5px, -12px);
     top: 14px;
