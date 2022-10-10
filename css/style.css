@@ -63,6 +63,11 @@ p {
     align-items: center;
     height: 72px;
   }
+  header{
+    position:fixed;
+    width:100vw;
+  }
+
 
   nav a {
     text-decoration: none;
@@ -419,6 +424,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: yellow;
   }
  
   .menu-items {
