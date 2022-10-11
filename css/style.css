@@ -406,11 +406,6 @@ p {
     text-align: center;
   }
 
-
-  /* .modal-container > div {
-    width: 50%;
-  } */
-
   .modal-image img {
     max-width: 100%;
   }
@@ -486,9 +481,9 @@ p {
 
   .modal-close {
     font-size: 30px;
-    border:none;
+    border: none;
     background: transparent;
-    padding:10px;
+    padding: 10px;
     cursor: pointer;
   }
 }
@@ -525,6 +520,48 @@ p {
     padding-top: 60px;
   }
 
+  .modal-image img {
+    max-width: 100%;
+  }
+
+  .modal-container {
+    width: 75vw;
+    height: 70vh;
+    display: flex;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-subtitle {
+    display: flex;
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal-subtitle li {
+    list-style-type: none;
+  }
+
+  .modal-close {
+    top: 3%;
+    left: 89%;
+    position: absolute;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    font-size: 30px;
+  }
+
   .menu-items li {
     list-style-type: none;
     padding-top: 20px;
@@ -542,7 +579,6 @@ p {
   }
 
   .toggler {
-    /* display: initial; */
     margin: 0 24px;
     position: absolute;
     z-index: 99;
@@ -631,6 +667,11 @@ p {
   .work-content {
     margin-top: 18px;
     margin-bottom: 24px;
+  }
+
+  .work-image img {
+    width: 100%;
+    height: auto;
   }
 
   .work {
