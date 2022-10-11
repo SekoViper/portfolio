@@ -64,7 +64,7 @@ let projects = [
     shortDesc: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.", 
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ", 
     imgURL: "img/art_desktop.png", 
-    techs: ['Html', 'Css', 'Javascript'], 
+    techs: ['Html', 'Css', 'Javascript','Ruby'], 
     linkToLive: "https://sekoviper.github.io/portfolio/", 
     linkToSrc: "https://github.com/SekoViper/portfolio", 
   },
@@ -106,11 +106,15 @@ projects.forEach((project, index) => {
             <p>
             ${project.shortDesc}
             </p>
-            ${ulElement}
+            <ul id="ul-${index}">
+            </ul>
             <button class="btn btn-primary">See Project</button>
           </div>
         </div>
   `;
   container.innerHTML += content;
+  let ulOrigin = document.getElementById(`ul-${index}`);
+  ulOrigin.replaceWith(ulElement);
+
 })
 
