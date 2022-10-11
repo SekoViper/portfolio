@@ -115,6 +115,7 @@ projects.forEach((project, index) => {
   container.innerHTML += content;
   let ulOrigin = document.getElementById(`ul-${index}`);
   ulOrigin.replaceWith(ulElement);
-
 })
+
+
 
