@@ -485,7 +485,11 @@ p {
   }
 
   .modal-close {
-    font-size: 30px
+    font-size: 30px;
+    border:none;
+    background: transparent;
+    padding:10px;
+    cursor: pointer;
   }
 }
 

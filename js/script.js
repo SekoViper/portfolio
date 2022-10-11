@@ -38,6 +38,7 @@ let projects = [
     shortDesc: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.", 
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ", 
     imgURL: "img/gym%20fit.png", 
+    modalURL:"img/modal_Portfolio.png",
     techs: [
       'Html', 'Css', 'Javascript'
   ], 
@@ -126,7 +127,6 @@ const workButtonList = document.querySelectorAll('.work-button')
 
 workButtonList.forEach((button)=>{
   button.addEventListener('click',()=>{
-    console.log("Project button pressed");
     let projectIndex = button.dataset.id;
     openModal(projectIndex)
   })
@@ -158,9 +158,9 @@ function openModal(projectIndex){
         </li>
       </ul>
     </div>
-    <div class="modal-close">
+    <button class="modal-close" id="modal-close" >
       &times;
-    </div>
+    </button>
   </div>
   <div class="modal-image">
     <img
@@ -185,5 +185,15 @@ modalParent.innerHTML = content;
 let ulOrigin = document.getElementById(`tech-ul`);
 ulOrigin.replaceWith(ulElement);
 
+const closeModalButton = document.getElementById('modal-close');
+
+closeModalButton.addEventListener("click",()=>{
+  console.log("close button pressed")
+  modalParent.innerHTML="";
+})
+
 }
+
+
+
 
