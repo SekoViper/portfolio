@@ -2,6 +2,7 @@ const toggler = document.querySelector('.toggler');
 const navMenu = document.querySelector('.menu-items');
 const linkItems = document.querySelectorAll('.menu-links');
 
+
 toggler.addEventListener('click', () => {
   toggler.classList.toggle('active');
   navMenu.classList.toggle('show-menu');
@@ -22,6 +23,7 @@ let projects = [
     shortDesc: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.", 
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ", 
     imgURL: "img/tonic_desktop.png", 
+    modalURL:"img/modal_Portfolio.png",
     techs: [
       'Html', 'Css', 'Javascript'
   ], 
@@ -50,6 +52,7 @@ let projects = [
     shortDesc: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.", 
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ", 
     imgURL: "img/Avialability.png", 
+    modalURL:"img/modal_Portfolio.png",
     techs: [
       'Html', 'Css', 'Javascript'
   ], 
@@ -64,6 +67,7 @@ let projects = [
     shortDesc: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.", 
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ", 
     imgURL: "img/art_desktop.png", 
+    modalURL:"img/modal_Portfolio.png",
     techs: ['Html', 'Css', 'Javascript','Ruby'], 
     linkToLive: "https://sekoviper.github.io/portfolio/", 
     linkToSrc: "https://github.com/SekoViper/portfolio", 
@@ -108,7 +112,7 @@ projects.forEach((project, index) => {
             </p>
             <ul id="ul-${index}">
             </ul>
-            <button class="btn btn-primary">See Project</button>
+            <button data-id=${index} class="btn btn-primary work-button">See Project</button>
           </div>
         </div>
   `;
@@ -117,5 +121,69 @@ projects.forEach((project, index) => {
   ulOrigin.replaceWith(ulElement);
 })
 
+// making work buttons open modal
+const workButtonList = document.querySelectorAll('.work-button')
 
+workButtonList.forEach((button)=>{
+  button.addEventListener('click',()=>{
+    console.log("Project button pressed");
+    let projectIndex = button.dataset.id;
+    openModal(projectIndex)
+  })
+})
+
+const modalParent = document.getElementById('modal-parent')
+function openModal(projectIndex){
+  let project = projects[projectIndex];
+ 
+  let ulElement = document.createElement('ul');
+  ulElement.classList.add('techs');
+  project.techs.forEach((item) =>{
+    let liElement = document.createElement('li');
+    liElement.classList.add('btn', 'btn-secondary');
+    liElement.innerHTML = `${item}`;
+    ulElement.appendChild(liElement);
+  })
+  const content = `<div class="modal-container">
+  <div class="modal-header">
+    <div class="modal-title">
+      <h2>${project.name}</h2>
+      <ul class="modal-subtitle">
+        <li class="modal-item project-title">${project.subTitle.title}</li>
+        <li class="modal-item project-role">
+          <img src="img/Counter.png" alt="Circle shape" />${project.subTitle.role}
+        </li>
+        <li class="modal-item project-year">
+          <img src="img/Counter.png" alt="Circle shape" /> ${project.subTitle.year}
+        </li>
+      </ul>
+    </div>
+    <div class="modal-close">
+      &times;
+    </div>
+  </div>
+  <div class="modal-image">
+    <img
+      src="${project.modalURL}"
+      alt="Tonic image"
+      class="img-hover-effect"
+    />
+  </div>
+  <div class="modal-content">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+    <div>
+    <ul id="tech-ul">
+    </ul>
+    <a class="btn" target="_blank" href="${project.linkToLive}">See Live <img src="img/see_live_Icon.png" alt="see live" ></a>
+    <a class="btn" target="_blank" href="${project.linkToSrc}">See Source <img src="img/github_btn_icon.svg" alt="github"></a>
+    </div>
+  </div>
+</div>`
+
+modalParent.innerHTML = content;
+let ulOrigin = document.getElementById(`tech-ul`);
+ulOrigin.replaceWith(ulElement);
+
+}
 
