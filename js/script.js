@@ -14,7 +14,6 @@ for (let i = 0; i < linkItems.length; i += 1) {
   });
 }
 
-
 // product data for portfolio
 const projects = [
   {
@@ -179,7 +178,6 @@ function openModal(projectIndex) {
   const ulOrigin = document.getElementById('tech-ul');
   ulOrigin.replaceWith(ulElement);
 
-
   // modal close code
   const closeModalButton = document.getElementById('modal-close');
   closeModalButton.addEventListener('click', () => {
@@ -193,3 +191,14 @@ workButtonList.forEach((button) => {
     openModal(projectIndex);
   });
 });
+
+// form validation
+const form = document.getElementById('fs-frm');
+const email = form.elements['email-address'];
+const errorMessage = document.getElementById('error-message');
+
+function isLowerCase(email) {
+  return email === email.toLowerCase();
+}
+
+
