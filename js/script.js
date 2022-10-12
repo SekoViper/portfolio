@@ -14,6 +14,8 @@ for (let i = 0; i < linkItems.length; i += 1) {
   });
 }
 
+
+// product data for portfolio
 const projects = [
   {
     id: 0,
@@ -74,14 +76,14 @@ const projects = [
   },
 ];
 
+// portfolio images dynamically generated
 const container = document.getElementById('portfolio');
-
 projects.forEach((project, index) => {
   const ulElement = document.createElement('ul');
   ulElement.classList.add('techs');
   project.techs.forEach((item) => {
     const liElement = document.createElement('li');
-    liElement.classList.add('btn', 'btn-secondary');
+    liElement.classList.add('tech-btn', 'btn-secondary');
     liElement.innerHTML = `${item}`;
     ulElement.appendChild(liElement);
   });
@@ -130,7 +132,7 @@ function openModal(projectIndex) {
   ulElement.classList.add('techs');
   project.techs.forEach((item) => {
     const liElement = document.createElement('li');
-    liElement.classList.add('btn', 'btn-secondary');
+    liElement.classList.add('tech-btn', 'btn-secondary');
     liElement.innerHTML = `${item}`;
     ulElement.appendChild(liElement);
   });
@@ -161,12 +163,14 @@ function openModal(projectIndex) {
   </div>
   <div class="modal-content">
     <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+    ${project.shortDesc}
+      </p>
     <div>
     <ul id="tech-ul">
     </ul>
-    <a class="btn" target="_blank" href="${project.linkToLive}">See Live <img src="img/see_live_Icon.png" alt="see live" ></a>
-    <a class="btn" target="_blank" href="${project.linkToSrc}">See Source <img src="img/github_btn_icon.svg" alt="github"></a>
+    <div class"modal-btn-container">
+    <a class="modal-btn" target="_blank" href="${project.linkToLive}"><span>See Live</span> <img src="img/see_live_Icon.png" alt="see live" ></a>
+    <a class="modal-btn" target="_blank" href="${project.linkToSrc}"><span>See Source </span><img src="img/github_btn_icon.svg" alt="github"></a>
     </div>
   </div>
 </div>`;
