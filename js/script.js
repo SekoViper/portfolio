@@ -179,8 +179,9 @@ function openModal(projectIndex) {
   const ulOrigin = document.getElementById('tech-ul');
   ulOrigin.replaceWith(ulElement);
 
-  const closeModalButton = document.getElementById('modal-close');
 
+  // modal close code
+  const closeModalButton = document.getElementById('modal-close');
   closeModalButton.addEventListener('click', () => {
     modalParent.innerHTML = '';
   });
