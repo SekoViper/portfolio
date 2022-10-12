@@ -201,4 +201,13 @@ function isLowerCase(email) {
   return email === email.toLowerCase();
 }
 
-
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValue = email.value;
+  if (isLowerCase(emailValue)) {
+    form.submit();
+    form.reset();
+  } else {
+    errorMessage.innerText = 'Please type your email in lowercase*';
+  }
+});
