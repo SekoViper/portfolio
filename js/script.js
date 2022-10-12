@@ -14,7 +14,6 @@ for (let i = 0; i < linkItems.length; i += 1) {
   });
 }
 
-
 // product data for portfolio
 const projects = [
   {
