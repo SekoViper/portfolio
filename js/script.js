@@ -238,7 +238,12 @@ formInputArr.forEach((input) => {
   });
 });
 
-
+function populateFields() {
+  const data = JSON.parse(localStorage.getItem('form'));
+  fullName.value = data.fullName;
+  email.value = data.email;
+  message.value = data.message;
+}
 
 function readFromLocalstorage() {
   if (localStorage.getItem('form')) {
@@ -246,12 +251,3 @@ function readFromLocalstorage() {
   }
 }
 readFromLocalstorage();
-function populateFields () {
-  const data = JSON.parse(localStorage.getItem('form'));
-  fullName.value = data.fullName;
-  email.value = data.email;
-  message.value = data.message;
-}
-
-readFromLocalstorage();
-
