@@ -69,6 +69,16 @@ h2 {
   transition: 0.4s;
 }
 
+.sub-btn:hover {
+  border: solid 1px #fff;
+}
+
+.logo {
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 h3 {
   font-style: normal;
   font-weight: 500;
@@ -521,11 +531,15 @@ p {
 @media only screen and (max-width: 768px) {
   .logo {
     font-size: 18px;
-    color: var(--primary-color);
-    font-weight: 700;
     line-height: 20px;
     text-decoration: none;
   }
+
+  p {
+    font-size: 19px;
+    line-height: 30px;
+    padding: 20px 0 10px 0;
+}
 
   nav {
     padding: 14px 24px;
