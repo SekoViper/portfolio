@@ -224,6 +224,10 @@ function contactInfo() {
   localStorage.setItem('form', JSON.stringify(formData));
 }
 
+function updateFormValue(id, value) {
+  formData[id] = value;
+}
+
 const formInputArr = [fullName, message, email];
 formInputArr.forEach((input) => {
   input.addEventListener('change', (event) => {
@@ -234,14 +238,20 @@ formInputArr.forEach((input) => {
   });
 });
 
-function updateFormValue(id, value) {
-  formData[id] = value;
-}
+
 
 function readFromLocalstorage() {
   if (localStorage.getItem('form')) {
     populateFields();
   }
 }
+readFromLocalstorage();
+function populateFields () {
+  const data = JSON.parse(localStorage.getItem('form'));
+  fullName.value = data.fullName;
+  email.value = data.email;
+  message.value = data.message;
+}
+
 readFromLocalstorage();
 
