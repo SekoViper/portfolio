@@ -54,6 +54,10 @@ h2 {
   text-decoration: none;
 }
 
+#error-message {
+  color: #ff7b6a;
+}
+
 .tech-btn {
   padding: 12px;
   color: var(--primary-color);

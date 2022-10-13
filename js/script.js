@@ -178,8 +178,8 @@ function openModal(projectIndex) {
   const ulOrigin = document.getElementById('tech-ul');
   ulOrigin.replaceWith(ulElement);
 
+  // modal close code
   const closeModalButton = document.getElementById('modal-close');
-
   closeModalButton.addEventListener('click', () => {
     modalParent.innerHTML = '';
   });
@@ -190,4 +190,24 @@ workButtonList.forEach((button) => {
     const projectIndex = button.dataset.id;
     openModal(projectIndex);
   });
+});
+
+// form validation
+const form = document.getElementById('fs-frm');
+const email = form.elements['email-address'];
+const errorMessage = document.getElementById('error-message');
+
+function isLowerCase(email) {
+  return email === email.toLowerCase();
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValue = email.value;
+  if (isLowerCase(emailValue)) {
+    form.submit();
+    form.reset();
+  } else {
+    errorMessage.innerText = 'Please type your email in lowercase*';
+  }
 });
