@@ -194,7 +194,7 @@ workButtonList.forEach((button) => {
 
 // form validation
 const form = document.getElementById('fs-frm');
-const email = form.elements['email-address'];
+const { email } = form.elements;
 const errorMessage = document.getElementById('error-message');
 
 function isLowerCase(email) {
@@ -211,3 +211,43 @@ form.addEventListener('submit', (event) => {
     errorMessage.innerText = 'Please type your email in lowercase*';
   }
 });
+
+const { fullName } = form.elements;
+const { message } = form.elements;
+const formData = {
+  fullName: '',
+  message: '',
+  email: '',
+};
+
+function contactInfo() {
+  localStorage.setItem('form', JSON.stringify(formData));
+}
+
+function updateFormValue(id, value) {
+  formData[id] = value;
+}
+
+const formInputArr = [fullName, message, email];
+formInputArr.forEach((input) => {
+  input.addEventListener('change', (event) => {
+    const eventId = event.target.id;
+    const eventValue = event.target.value;
+    updateFormValue(eventId, eventValue);
+    contactInfo();
+  });
+});
+
+function populateFields() {
+  const data = JSON.parse(localStorage.getItem('form'));
+  fullName.value = data.fullName;
+  email.value = data.email;
+  message.value = data.message;
+}
+
+function readFromLocalstorage() {
+  if (localStorage.getItem('form')) {
+    populateFields();
+  }
+}
+readFromLocalstorage();
