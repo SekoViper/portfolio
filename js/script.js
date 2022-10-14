@@ -252,3 +252,29 @@ function readFromLocalstorage() {
   }
 }
 readFromLocalstorage();
+
+
+// underlining correct nav link based on current visible section
+const sectionList = document.querySelectorAll('main > section');
+const desktopNavLinkList = document.querySelectorAll('.menu-links');
+
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
+window.addEventListener('scroll', () => {
+  sectionList.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    
+    //checking if top of section is above halfway point of screen && checking thaat bottom of section 
+    // is below halfway point of screen
+    if (rect.top <= vh / 2 && rect.bottom >= vh / 2) {
+      const sectionId = section.getAttribute('id');
+      desktopNavLinkList.forEach((navLink) => {
+        if (sectionId === navLink.getAttribute('href').replace('#', '')) {
+          navLink.classList.add('underline-current-nav');
+        } else {
+          navLink.classList.remove('underline-current-nav');
+        }
+      });
+    }
+  });
+});

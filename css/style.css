@@ -449,6 +449,11 @@ p {
     max-width: 100%;
   }
 
+  .underline-current-nav {
+    transition: all 0.3s;
+    border-bottom: 5px solid red;
+  }
+
   .modal-container {
     display: flex;
     width: 40vw;
