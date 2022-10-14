@@ -220,6 +220,7 @@ const formData = {
   email: '',
 };
 
+// storing data in localStorage 
 function contactInfo() {
   localStorage.setItem('form', JSON.stringify(formData));
 }
