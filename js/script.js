@@ -18,26 +18,26 @@ for (let i = 0; i < linkItems.length; i += 1) {
 const projects = [
   {
     id: 0,
-    name: 'Tonic',
-    subTitle: { title: 'Canopy', role: 'Back End Dev', year: '2015' },
+    name: 'NGC Dev Congress',
+    subTitle: { title: 'NGC congress', role: 'Back End Dev', year: '2015' },
     shortDesc: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ",
-    imgURL: 'img/tonic_desktop.png',
-    modalURL: 'img/modal_Portfolio.png',
+    imgURL: 'img/devcongress.png',
+    modalURL: 'img/dev_congress_main.png',
     techs: [
       'Html', 'Css', 'Javascript',
     ],
-    linkToLive: 'https://sekoviper.github.io/portfolio/',
-    linkToSrc: 'https://github.com/SekoViper/portfolio',
+    linkToLive: 'https://sekoviper.github.io/WorldDevCongress/',
+    linkToSrc: 'https://github.com/SekoViper/WorldDevCongress.git',
   },
 
   {
     id: 1,
-    name: 'Multi-Post Stories',
-    subTitle: { title: 'Canopy', role: 'Back End Dev', year: '2015' },
+    name: 'Portfolio',
+    subTitle: { title: 'My portfolio', role: 'Back End Dev', year: '2015' },
     shortDesc: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ",
-    imgURL: 'img/gym%20fit.png',
+    imgURL: 'img/portfolio.png',
     modalURL: 'img/modal_Portfolio.png',
     techs: [
       'Html', 'Css', 'Javascript',
@@ -52,25 +52,25 @@ const projects = [
     subTitle: { title: 'Canopy', role: 'Back End Dev', year: '2015' },
     shortDesc: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ",
-    imgURL: 'img/Avialability.png',
-    modalURL: 'img/modal_Portfolio.png',
+    imgURL: 'img/spiika_hompage.png',
+    modalURL: 'img/spiika_team.png',
     techs: [
-      'Html', 'Css', 'Javascript',
+      'Wordpress', 'JavaScript', 'Css',
     ],
-    linkToLive: 'https://sekoviper.github.io/portfolio/',
-    linkToSrc: 'https://github.com/SekoViper/portfolio',
+    linkToLive: 'https://spiika.com',
+    linkToSrc: 'https://spiika.com/',
   },
 
   {
     id: 3,
-    name: 'Professional Art',
-    subTitle: { title: 'Canopy', role: 'Back End Dev', year: '2015' },
+    name: 'Todo List',
+    subTitle: { title: 'Todo', role: 'Back End Dev', year: '2015' },
     shortDesc: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ",
-    imgURL: 'img/art_desktop.png',
-    modalURL: 'img/modal_Portfolio.png',
-    techs: ['Html', 'Css', 'Javascript', 'Ruby'],
-    linkToLive: 'https://sekoviper.github.io/portfolio/',
+    imgURL: 'img/todo.png',
+    modalURL: 'img/todo.png',
+    techs: ['Html', 'Css', 'Javascript'],
+    linkToLive: 'https://sekoviper.github.io/todo/',
     linkToSrc: 'https://github.com/SekoViper/portfolio',
   },
 ];
@@ -103,7 +103,7 @@ projects.forEach((project, index) => {
                 <img src="img/Counter.png" alt="Circle shape" /> ${project.subTitle.role}
               </li>
               <li class="work-item works-year">
-                <img src="img/Counter.png" alt="Circle shape" /> ${project.subTitle.year}
+              <img src="img/Counter.png" alt="Circle shape" /> ${project.subTitle.year}
               </li>
             </ul>
             <p>
@@ -212,6 +212,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+// using the localStorage
 const { fullName } = form.elements;
 const { message } = form.elements;
 const formData = {
